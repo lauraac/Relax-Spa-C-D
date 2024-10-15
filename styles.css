@@ -34,7 +34,12 @@ body {
 
 /* Ajuste de márgenes para el texto en movimiento */
 .marquee {
-    margin-bottom: 20px; /* Espacio debajo del texto en movimiento */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio debajo de la galería */
+    padding: 0 20px; /* Alinea con el padding del contenido */
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
 }
 
 /* Galería de imágenes */
