@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promoción - Depilación Gratis</title>
-    <!-- Enlazar el archivo CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <!-- Logo a la izquierda y redes sociales a la derecha -->
         <div class="header-content">
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>¡Déjate Consentir!</h1>
             <div class="social-icons">
-                <p class="promo">Contáctame para hacer válida tu promoción:</p> <!-- Texto añadido -->
-                <!-- Botón WhatsApp del cliente -->
+                <p class="promo">Contáctame para hacer válida tu promoción:</p>
                 <a href="https://wa.me/525584512869?text=¡Hola!%20Quiero%20reservar%20mi%20cita%20para%20la%20depilación%20gratis%20desde%20mi%20página%20de%20internet" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
                 </a>
-                <!-- Botón Facebook del cliente -->
                 <a href="https://www.facebook.com/share/bWVc3NrbHBf2YWVJ/?mibextid=LQQJ4d" target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
                 </a>
@@ -70,7 +66,7 @@
     <script>
         const carousel = document.querySelector('.carousel');
         let scrollPosition = 0;
-        const scrollAmount = 300; // Cantidad de scroll en cada movimiento
+        const scrollAmount = 300;
         const maxScroll = carousel.scrollWidth - carousel.clientWidth;
 
         function autoScroll() {
@@ -84,7 +80,7 @@
             });
         }
 
-        setInterval(autoScroll, 3000); // Cambia de imagen cada 3 segundos
+        setInterval(autoScroll, 3000);
     </script>
 </body>
 </html>
