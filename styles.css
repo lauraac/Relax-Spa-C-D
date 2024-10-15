@@ -89,7 +89,6 @@ h1 {
     font-size: 2em;
     margin: 10px 0;
 }
-
 .promo {
     color: #f9f9f9;
     font-size: 1em;
@@ -110,6 +109,7 @@ h1 {
 .social-icons img {
     width: 40px;
     height: 40px;
+    object-fit: contain; /* Asegura que todas las imágenes se ajusten al mismo tamaño sin distorsión */
     transition: transform 0.3s ease;
 }
 
