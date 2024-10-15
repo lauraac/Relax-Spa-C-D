@@ -29,14 +29,12 @@
             <p>Promoción: Depilación gratis este viernes. ¡Reserva tu cita ahora!</p>
         </div>
 
-        <!-- Carrusel de imágenes -->
-        <div class="carousel-container">
-            <div class="carousel">
-                <img src="img/1.jpeg" alt="Imagen 1">
-                <img src="img/2.jpeg" alt="Imagen 2">
-                <img src="img/3.jpeg" alt="Imagen 3">
-                <img src="img/4.jpeg" alt="Imagen 4">
-            </div>
+        <!-- Galería de imágenes en lugar del carrusel -->
+        <div class="gallery-container">
+            <img src="img/1.jpeg" alt="Imagen 1" class="gallery-img">
+            <img src="img/2.jpeg" alt="Imagen 2" class="gallery-img">
+            <img src="img/3.jpeg" alt="Imagen 3" class="gallery-img">
+            <img src="img/4.jpeg" alt="Imagen 4" class="gallery-img">
         </div>
 
         <div class="content">
@@ -47,7 +45,7 @@
             <!-- Contenedor del GIF -->
             <div class="gif-container">
                 <h3>Mira cómo será tu experiencia:</h3>
-                <img src="https://hips.hearstapps.com/hmg-prod/images/depilacion-1594736610.gif" alt="GIF animado de depilación">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/depilacion-1594736610.gif" alt="GIF animado de depilación" class="gif-img">
             </div>
         </div>
 
@@ -63,26 +61,5 @@
         <source src="music/naturaleza.mp3" type="audio/mpeg">
         Tu navegador no soporta el audio.
     </audio>
-
-    <!-- Script para el carrusel automático -->
-    <script>
-        const carousel = document.querySelector('.carousel');
-        let scrollPosition = 0;
-        const scrollAmount = 300;
-        const maxScroll = carousel.scrollWidth - carousel.clientWidth;
-
-        function autoScroll() {
-            scrollPosition += scrollAmount;
-            if (scrollPosition >= maxScroll) {
-                scrollPosition = 0;
-            }
-            carousel.scrollTo({
-                left: scrollPosition,
-                behavior: 'smooth'
-            });
-        }
-
-        setInterval(autoScroll, 3000);
-    </script>
 </body>
 </html>

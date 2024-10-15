@@ -8,10 +8,10 @@ body {
 }
 
 .container {
-    max-width: 1200px; /* El máximo tamaño que puede tener la página en pantallas grandes */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
-    width: 100%; /* Asegura que el contenedor siempre ocupe el ancho disponible */
+    width: 100%;
 }
 
 /* Header: Logo y redes sociales */
@@ -62,24 +62,19 @@ h1 {
     transform: scale(1.2);
 }
 
-/* Carrusel */
-.carousel-container {
-    width: 100%;
-    overflow: hidden;
+/* Galería de imágenes (en lugar del carrusel) */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px 0;
 }
 
-.carousel {
-    display: flex;
-    justify-content: center;
-    transition: transform 0.3s ease-in-out;
-}
-
-.carousel img {
+.gallery-img {
     width: 100%;
     max-width: 300px;
+    margin-bottom: 10px;
     height: auto;
-    margin-right: 10px;
     object-fit: cover;
 }
 
@@ -126,7 +121,7 @@ h1 {
 
 /* Estilos del GIF */
 .gif-container img {
-    max-width: 100%; /* El GIF ocupará el 100% del contenedor, pero no excederá su tamaño original */
+    max-width: 100%;
     height: auto;
 }
 
@@ -161,10 +156,9 @@ footer {
         padding: 15px;
     }
 
-    .carousel img {
+    .gallery-img {
         width: 100%;
-        height: auto;
-        margin-right: 5px;
+        max-width: 100%;
     }
 
     .marquee {
@@ -172,7 +166,7 @@ footer {
     }
 
     .gif-container img {
-        width: 100%; /* El GIF se adaptará completamente al tamaño del contenedor */
+        width: 100%;
     }
 }
 
@@ -189,11 +183,6 @@ footer {
 
     h1 {
         font-size: 1.8em;
-    }
-
-    .carousel img {
-        width: 250px;
-        height: 150px;
     }
 
     .content {
