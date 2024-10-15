@@ -18,6 +18,7 @@ header {
     margin: 0 auto; /* Centra el header */
     padding: 0 20px; /* Añade un padding para alinear el contenido */
     box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
+    border-radius: 10px; /* Bordes redondeados para el contenedor rosado */
 }
 /* Header: Logo y redes sociales */
 .header-content {
@@ -27,6 +28,7 @@ header {
     align-items: center;
     padding: 10px 0;
     background-color: #ff69b4;
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 /* Alinear la galería y el texto en movimiento con el resto del contenido */
@@ -40,7 +42,7 @@ header {
 /* Ajuste de márgenes para el texto en movimiento */
 .marquee {
     max-width: 1200px; /* Misma anchura que los demás contenedores */
-    margin: 0 auto; /* Centra el texto en movimiento */
+    margin: 20px auto; /* Añade margen superior e inferior */
     padding: 20px 20px; /* Añade un padding para alinear con el contenido */
     background-color: #b5ff6b;
     color: white;
@@ -49,9 +51,9 @@ header {
     overflow: hidden;
     position: relative;
     animation: scroll 20s linear infinite;
+    border-radius: 10px; /* Bordes redondeados para el contenedor verde */
     box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
 }
-
 .marquee p {
     display: inline-block;
     white-space: nowrap; /* Evita que el texto haga salto de línea */
@@ -60,10 +62,10 @@ header {
 
 @keyframes scroll {
     0% {
-        transform: translateX(100%); /* Comienza justo dentro del contenedor */
+        transform: translateX(100%);
     }
     100% {
-        transform: translateX(-100%); /* Termina justo cuando sale del contenedor */
+        transform: translateX(-100%);
     }
 }
 
