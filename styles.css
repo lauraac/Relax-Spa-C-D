@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header: Logo a la izquierda y redes sociales a la derecha */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ff69b4;
+}
+
+.logo {
+    width: 100px;
+}
+h1{
+    color: #f9f9f9;
+}
+
+.promo{
+    color: #f9f9f9;
+}
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    margin-left: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.4);
+}
+
+/* Carrusel */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center; /* Centra el carrusel horizontalmente */
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel img {
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* Texto en movimiento */
+.marquee {
+    width: 100%;
+    background-color: #b5ff6b;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Estilos para el contenido */
+.content {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+    color: #ff69b4;
+    font-size: 1.8em;
+}
+
+.content p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .carousel img {
+        width: 250px;
+        height: 150px;
+    }
+
+    .logo {
+        width: 80
