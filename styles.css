@@ -24,6 +24,29 @@ body {
     background-color: #ff69b4;
 }
 
+/* Alinear la galería y el texto en movimiento con el resto del contenido */
+.gallery-container, .marquee, .content {
+    max-width: 1200px; /* Asegura que todos los contenedores tengan el mismo ancho */
+    margin: 0 auto; /* Centra los contenedores */
+    padding: 20px; /* Añade un padding uniforme alrededor */
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
+}
+
+/* Ajuste de márgenes para el texto en movimiento */
+.marquee {
+    margin-bottom: 20px; /* Espacio debajo del texto en movimiento */
+}
+
+/* Galería de imágenes */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio debajo de la galería */
+    padding: 0 20px; /* Alinea con el padding del contenido */
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
+}
+
 .logo {
     width: 100px;
     height: auto;
@@ -63,14 +86,6 @@ h1 {
 }
 
 /* Galería de imágenes (en lugar del carrusel) */
-/* Galería de imágenes (en lugar del carrusel) */
-.gallery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
-
 .gallery-img {
     width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
     max-width: 300px; /* Máximo ancho de 300px */
@@ -80,7 +95,6 @@ h1 {
     border-radius: 10px; /* Opcional, para redondear las esquinas de las imágenes */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Añade un sutil sombreado */
 }
-
 
 /* Texto en movimiento */
 .marquee {
