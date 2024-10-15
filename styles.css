@@ -63,6 +63,7 @@ h1 {
 }
 
 /* Galería de imágenes (en lugar del carrusel) */
+/* Galería de imágenes (en lugar del carrusel) */
 .gallery-container {
     display: flex;
     flex-direction: column;
@@ -71,12 +72,15 @@ h1 {
 }
 
 .gallery-img {
-    width: 100%;
-    max-width: 300px;
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+    max-width: 300px; /* Máximo ancho de 300px */
+    height: 200px; /* Fija una altura de 200px para todas las imágenes */
     margin-bottom: 10px;
-    height: auto;
-    object-fit: cover;
+    object-fit: cover; /* Hace que la imagen se recorte si es necesario para ajustarse al contenedor */
+    border-radius: 10px; /* Opcional, para redondear las esquinas de las imágenes */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Añade un sutil sombreado */
 }
+
 
 /* Texto en movimiento */
 .marquee {
