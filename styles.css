@@ -109,7 +109,10 @@ h1 {
 .social-icons img {
     width: 40px;
     height: 40px;
-    object-fit: contain; /* Asegura que todas las imágenes se ajusten al mismo tamaño sin distorsión */
+    max-width: 100%;  /* Asegura que la imagen no sea más grande que el contenedor */
+    max-height: 100%; /* Asegura que la imagen no exceda el tamaño máximo */
+    object-fit: contain; /* Mantiene las proporciones de la imagen sin estirarla */
+    box-sizing: border-box; /* Asegura que los bordes y el relleno se incluyan en el tamaño total */
     transition: transform 0.3s ease;
 }
 
