@@ -59,6 +59,11 @@ header {
     white-space: nowrap; /* Evita que el texto haga salto de línea */
     animation: scroll 20s linear infinite; /* Hace que el texto se desplace de derecha a izquierda */
 }
+img {
+    max-width: 100%; /* Para que no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Elimina espacios extra alrededor */
+}
 
 @keyframes scroll {
     0% {
