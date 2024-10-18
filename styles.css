@@ -141,7 +141,7 @@ h1 {
 }
 
 .content h2 {
-    color: #ff69b4;
+    color: white;
     font-size: 1.8em;
 }
 
@@ -176,6 +176,10 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar las imágenes */
 }
 
+h2 {
+   background-color: #ff69b4;
+   color: #fff;
+}
 
 /* Responsividad para pantallas pequeñas (hasta 480px) */
 @media (max-width: 480px) {
@@ -214,6 +218,20 @@ footer {
     .gif-container img {
         width: 100%;
     }
+}
+
+.rounded-container {
+    border-radius: 20px; /* Esquinas redondeadas */
+    overflow: hidden; /* Para que el contenido respete las esquinas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    background-color: #fff; /* Fondo blanco para destacar */
+    margin: 20px; /* Separación entre secciones */
+    padding: 15px; /* Espacio interno para que no quede apretado */
+    transition: transform 0.3s ease; /* Animación suave al pasar el mouse */
+}
+
+.rounded-container:hover {
+    transform: scale(1.02); /* Efecto de zoom al pasar el mouse */
 }
 
 /* Responsividad para pantallas medianas (hasta 768px) */

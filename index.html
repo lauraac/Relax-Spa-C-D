@@ -1,215 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promoción - Depilación Gratis</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        /* Estilos del carrusel */
-        .carousel {
-            margin: 20px 0;
-            text-align: center;
-        }
+      /* Estilos del carrusel */
+      .carousel {
+        margin: 20px 0;
+        text-align: center;
+      }
 
-        .carousel-container {
-            display: flex;
-            overflow: hidden;
-            width: 80%;
-            margin: 0 auto;
-        }
+      .carousel-container {
+        display: flex;
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+      }
 
-        .carousel-track {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
+      .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
 
-        .carousel-container img {
-            width: 100%;
-            max-width: 25%; /* 4 imágenes visibles al mismo tiempo */
-            flex: 0 0 auto;
-        }
+      .carousel-container img {
+        width: 100%;
+        max-width: 25%; /* 4 imágenes visibles al mismo tiempo */
+        flex: 0 0 auto;
+      }
 
-        .carousel-buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
+      .carousel-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
 
-        .carousel-buttons button {
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: #ff69b4;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+      .carousel-buttons button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        background-color: #ff69b4;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
 
-        .carousel-buttons button:hover {
-            background-color: #ff4580;
-        }
+      .carousel-buttons button:hover {
+        background-color: #ff4580;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <div class="header-content">
-                <img src="img/logo.png" alt="Logo" class="logo">
-                <h1>¡Déjate Consentir!</h1>
-                <div class="social-icons">
-                    <p class="promo">Contáctame para hacer válida tu promoción:</p>
-                    <a href="https://www.google.com/maps?q=19.3464344,-98.9867734" target="_blank">
-                        <img src="./img/maps.png" alt="Ubicación" style="width: 40px; height: 40px;">
-                    </a>
-                    <a href="https://wa.me/525584512869?text=¡Hola!%20Quiero%20reservar%20mi%20cita%20para%20la%20depilación%20gratis%20desde%20mi%20página%20de%20internet" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp">
-                    </a>
-                    <a href="https://www.facebook.com/share/bWVc3NrbHBf2YWVJ/?mibextid=LQQJ4d" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-                    </a>
-                </div>
-            </div>
-        </header>
-
-        <div class="marquee">
-            <p>Promoción: Depilación gratis este viernes. ¡Reserva tu cita ahora!</p>
+      <header>
+        <div class="header-content">
+          <img src="img/logo.png" alt="Logo" class="logo" />
+          <h1>¡Déjate Consentir!</h1>
+          <div class="social-icons">
+            <p class="promo">Contáctame para hacer válida tu promoción:</p>
+            <a
+              href="https://www.google.com/maps?q=19.3464344,-98.9867734"
+              target="_blank"
+            >
+              <img
+                src="./img/maps.png"
+                alt="Ubicación"
+                style="width: 40px; height: 40px"
+              />
+            </a>
+            <a
+              href="https://wa.me/525584512869?text=¡Hola!%20Quiero%20reservar%20mi%20cita%20para%20la%20depilación%20gratis%20desde%20mi%20página%20de%20internet"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
+                alt="WhatsApp"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/share/bWVc3NrbHBf2YWVJ/?mibextid=LQQJ4d"
+              target="_blank"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                alt="Facebook"
+              />
+            </a>
+          </div>
         </div>
+      </header>
 
-        <div class="gallery-container">
-            <img src="img/depilacion.jpeg" alt="Imagen 1" class="gallery-img">
-            <img src="img/masaje2.jpeg" alt="Imagen 2" class="gallery-img">
-            <img src="img/dep1.jpeg" alt="Imagen 3" class="gallery-img">
-            <img src="img/masajeReductivo.jpeg" alt="Imagen 4" class="gallery-img">
-            <img src="img/ver.jpeg" alt="Imagen 4" class="gallery-img">
-        </div>
+      <div class="marquee">
+        <p>
+          Promoción: Depilación gratis este viernes. ¡Reserva tu cita ahora!
+        </p>
+      </div>
 
-        <div class="content">
-            <h2>Depilación de Axilas Gratis</h2>
-            <p>Este viernes, 18 de octubre, te ofrecemos depilación completamente gratis. Aprovecha esta oportunidad única para lucir increíble y sentirte fabulosa.</p>
-            <p>¡No necesitas hacer nada más que venir a nuestro local!</p>
+      <div class="gallery-container">
+        <img src="img/depilacion.jpeg" alt="Imagen 1" class="gallery-img" />
+        <img src="img/masaje2.jpeg" alt="Imagen 2" class="gallery-img" />
+        <img src="img/dep1.jpeg" alt="Imagen 3" class="gallery-img" />
+        <img
+          src="img/masajeReductivo.jpeg"
+          alt="Imagen 4"
+          class="gallery-img"
+        />
+        <img src="img/ver.jpeg" alt="Imagen 4" class="gallery-img" />
+      </div>
 
-            <div class="gif-container">
-                <h3>Mira cómo será tu experiencia:</h3>
-                <img src="https://hips.hearstapps.com/hmg-prod/images/depilacion-1594736610.gif" alt="GIF animado de depilación" class="gif-img">
-            </div>
-        </div>
+      <div class="content">
+        <h2>Depilación de Axilas Gratis</h2>
+        <p>
+          Este viernes, 18 de octubre, te ofrecemos depilación completamente
+          gratis. Aprovecha esta oportunidad única para lucir increíble y
+          sentirte fabulosa.
+        </p>
+        <p>¡No necesitas hacer nada más que venir a nuestro local!</p>
 
-        <!-- Carrusel para Masaje Reductivo -->
-        <div class="carousel">
-            <h2>Depilacion</h2>
-            <div class="carousel-container">
-                <div class="carousel-track" id="carousel1">
-                    <img src="img/dep1.jpeg" alt="Masaje Reductivo 1">
-                    <img src="img/dep3.jpeg" alt="Masaje Reductivo 2">
-                    <img src="img/depilacion.jpeg" alt="Masaje Reductivo 3">
-                    <img src="img/depilacion2.jpeg" alt="Masaje Reductivo 4">
-                </div>
-            </div>
-            <div class="carousel-buttons">
-                <button onclick="prevImage('carousel1')">Anterior</button>
-                <button onclick="nextImage('carousel1')">Siguiente</button>
-            </div>
+        <div class="gif-container">
+          <h3>Mira cómo será tu experiencia:</h3>
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/depilacion-1594736610.gif"
+            alt="GIF animado de depilación"
+            class="gif-img"
+          />
         </div>
-        <div class="carousel">
-            <h2>Masaje Reductivo</h2>
-            <div class="carousel-container">
-                <div class="carousel-track" id="carousel1">
-                    <img src="img/masajeReductivo.jpeg" alt="Masaje Reductivo 1">
-                    <img src="img/masaje4.jpeg" alt="Masaje Reductivo 2">
-                    <img src="img/masaje1.jpeg" alt="Masaje Reductivo 3">
-                    <img src="img/masaje8.jpeg" alt="Masaje Reductivo 4">
-                </div>
-            </div>
-            <div class="carousel-buttons">
-                <button onclick="prevImage('carousel1')">Anterior</button>
-                <button onclick="nextImage('carousel1')">Siguiente</button>
-            </div>
-        </div>
+      </div>
 
-        <div class="carousel">
-            <h2>Masaje relajante</h2>
-            <div class="carousel-container">
-                <div class="carousel-track" id="carousel1">
-                    <img src="img/masaje.jpeg" alt="Masaje Reductivo 1">
-                    <img src="img/masaje1.jpeg" alt="Masaje Reductivo 2">
-                    <img src="img/masaje2.jpeg" alt="Masaje Reductivo 3">
-                    <img src="img/masaje3.jpeg" alt="Masaje Reductivo 4">
-                </div>
-            </div>
-            <div class="carousel-buttons">
-                <button onclick="prevImage('carousel1')">Anterior</button>
-                <button onclick="nextImage('carousel1')">Siguiente</button>
-            </div>
-        </div>
-        <div class="carousel">
-            <h2>Masaje de piedras caliente</h2>
-            <div class="carousel-container">
-                <div class="carousel-track" id="carousel1">
-                    <img src="img/masaje5.jpeg" alt="Masaje Reductivo 1">
-                    <img src="img/masaje6.jpeg" alt="Masaje Reductivo 2">
-                    <img src="img/masaje7.jpeg" alt="Masaje Reductivo 3">
-                    <img src="img/masaje5.jpeg" alt="Masaje Reductivo 4">
-                </div>
-            </div>
-            <div class="carousel-buttons">
-                <button onclick="prevImage('carousel1')">Anterior</button>
-                <button onclick="nextImage('carousel1')">Siguiente</button>
-            </div>
-        </div>
+      <!-- Carrusel para Masaje Reductivo -->
 
-        <div class="carousel">
-            <h2>Retiro de verrugas</h2>
-            <div class="carousel-container">
-                <div class="carousel-track" id="carousel1">
-                    <img src="img/ver.jpeg" alt="Masaje Reductivo 1">
-                    <img src="img/ver3.jpeg" alt="Masaje Reductivo 2">
-                    <img src="img/verr.jpeg" alt="Masaje Reductivo 3">
-                    <img src="img/ver.jpeg" alt="Masaje Reductivo 4">
-                </div>
+      <div class="carousel">
+        <div class="rounded-container">
+          <h2>Limpieza Facial</h2>
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel1">
+              <img src="img/limpiezaFacial1.webp" alt="Masaje Reductivo 1" />
+              <img src="img/limpiezaFacial2.jpeg" alt="Masaje Reductivo 2" />
+              <img src="img/limpiezafacial3.jpeg" alt="Masaje Reductivo 3" />
+              <img src="img/limpiezafacila4.jpeg" alt="Masaje Reductivo 4" />
             </div>
-            <div class="carousel-buttons">
-                <button onclick="prevImage('carousel1')">Anterior</button>
-                <button onclick="nextImage('carousel1')">Siguiente</button>
-            </div>
+          </div>
         </div>
+      </div>
 
-        <footer>
-            <p>Página creada por LAURA AC | 
-                <a href="https://wa.me/525534633490?text=¡Hola!%20Laura,%20quiero%20contactarte%20por%20tu%20servicio%20de%20diseño%20web." target="_blank">Contáctame por WhatsApp</a>
-            </p>
-        </footer>
+      <div class="carousel">
+        <div class="rounded-container">
+          <h2>Masaje Reductivo</h2>
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel1">
+              <img src="img/masajeReductivo.jpeg" alt="Masaje Reductivo 1" />
+              <img src="img/masaje4.jpeg" alt="Masaje Reductivo 2" />
+              <img src="img/masaje1.jpeg" alt="Masaje Reductivo 3" />
+              <img src="img/masaje8.jpeg" alt="Masaje Reductivo 4" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="rounded-container">
+          <h2>Masaje de piedras caliente</h2>
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel1">
+                <img src="img/masaje5.jpeg" alt="Masaje Reductivo 2" />
+              <img src="img/masaje6.jpeg" alt="Masaje Reductivo 2" />
+              <img src="img/masaje7.jpeg" alt="Masaje Reductivo 3" />
+              <img src="img/masaje5.jpeg" alt="Masaje Reductivo 4" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="rounded-container">
+          <h2>Masaje relajante</h2>
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel1">
+              <img src="img/masaje.jpeg" alt="Masaje Reductivo 1" />
+              <img src="img/masaje1.jpeg" alt="Masaje Reductivo 2" />
+              <img src="img/masaje2.jpeg" alt="Masaje Reductivo 3" />
+              <img src="img/masaje3.jpeg" alt="Masaje Reductivo 4" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="rounded-container">
+          <h2>Retiro de verrugas</h2>
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel1">
+              <img src="img/ver.jpeg" alt="Masaje Reductivo 1" />
+              <img src="img/ver3.jpeg" alt="Masaje Reductivo 2" />
+              <img src="img/verr.jpeg" alt="Masaje Reductivo 3" />
+              <img src="img/ver.jpeg" alt="Masaje Reductivo 4" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel">
+        <div class="rounded-container">
+          <h2>Depilacion</h2>
+          <div class="carousel-container">
+            <div class="carousel-track" id="carousel1">
+              <img src="img/dep1.jpeg" alt="Masaje Reductivo 1" />
+              <img src="img/dep3.jpeg" alt="Masaje Reductivo 2" />
+              <img src="img/depilacion.jpeg" alt="Masaje Reductivo 3" />
+              <img src="img/depilacion2.jpeg" alt="Masaje Reductivo 4" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Página creada por LAURA AC |
+          <a
+            href="https://wa.me/525534633490?text=¡Hola!%20Laura,%20quiero%20contactarte%20por%20tu%20servicio%20de%20diseño%20web."
+            target="_blank"
+            >Contáctame por WhatsApp</a
+          >
+        </p>
+      </footer>
     </div>
 
     <audio autoplay loop>
-        <source src="music/naturaleza.mp3" type="audio/mpeg">
-        Tu navegador no soporta el audio.
+      <source src="music/naturaleza.mp3" type="audio/mpeg" />
+      Tu navegador no soporta el audio.
     </audio>
 
     <script>
-        let currentIndex = 0;
+      let currentIndex = 0;
 
-        function nextImage(carouselId) {
-            const track = document.getElementById(carouselId);
-            const images = track.children;
-            const imageWidth = images[0].clientWidth;
+      function nextImage(carouselId) {
+        const track = document.getElementById(carouselId);
+        const images = track.children;
+        const imageWidth = images[0].clientWidth;
 
-            if (currentIndex < images.length - 1) {
-                currentIndex++;
-                track.style.transform = `translateX(-${imageWidth * currentIndex}px)`;
-            }
+        if (currentIndex < images.length - 1) {
+          currentIndex++;
+          track.style.transform = `translateX(-${imageWidth * currentIndex}px)`;
         }
+      }
 
-        function prevImage(carouselId) {
-            const track = document.getElementById(carouselId);
-            const images = track.children;
-            const imageWidth = images[0].clientWidth;
+      function prevImage(carouselId) {
+        const track = document.getElementById(carouselId);
+        const images = track.children;
+        const imageWidth = images[0].clientWidth;
 
-            if (currentIndex > 0) {
-                currentIndex--;
-                track.style.transform = `translateX(-${imageWidth * currentIndex}px)`;
-            }
+        if (currentIndex > 0) {
+          currentIndex--;
+          track.style.transform = `translateX(-${imageWidth * currentIndex}px)`;
         }
+      }
     </script>
-</body>
+  </body>
 </html>
