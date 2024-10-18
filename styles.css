@@ -29,6 +29,7 @@ header {
     padding: 20px;
     background-color: #ff69b4;
     border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 10px;
 }
 
 /* Alinear la galería y el texto en movimiento con el resto del contenido */
@@ -51,7 +52,7 @@ header {
     overflow: hidden;
     position: relative;
     animation: scroll 20s linear infinite;
-    border-radius: 10px; /* Bordes redondeados para el contenedor verde */
+    border-radius: 30px; /* Bordes redondeados para el contenedor verde */
     box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */
 }
 .marquee p {
@@ -59,12 +60,35 @@ header {
     white-space: nowrap; /* Evita que el texto haga salto de línea */
     animation: scroll 20s linear infinite; /* Hace que el texto se desplace de derecha a izquierda */
 }
-img {
-    max-width: 100%; /* Para que no exceda el ancho del contenedor */
-    height: auto; /* Mantiene la proporción */
-    display: block; /* Elimina espacios extra alrededor */
-}
 
+.promo-banner {
+    background-color: #b5ff6b;
+
+    padding: 10px 0;
+    border-radius: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    
+    
+  }
+  
+  #promo-text {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: red;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
 @keyframes scroll {
     0% {
         transform: translateX(100%);
