@@ -26,7 +26,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px;
     background-color: #ff69b4;
     border-radius: 10px; /* Bordes redondeados */
 }
@@ -122,13 +122,14 @@ h1 {
 
 /* Galería de imágenes (en lugar del carrusel) */
 .gallery-img {
-    width: calc(33.33% - 20px); /* Tres imágenes por fila en computadoras, ajusta el ancho según sea necesario */
-    height: auto;
-    margin: 10px; /* Espacio entre las imágenes */
-    object-fit: cover;
+    width: 200px; /* Ancho uniforme */
+    height: 200px; /* Altura uniforme */
+    object-fit: cover; /* Ajuste sin distorsión */
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Estilos para el contenido */
 .content {
@@ -168,18 +169,77 @@ footer {
     padding: 10px 0; /* Añade espacio superior e inferior */
 }
 
+
 .carousel-container img {
-    width: calc(25% - 15px); /* Ajusta el ancho para considerar el espacio entre imágenes */
-    max-width: 25%;
-    flex: 0 0 auto;
-    border-radius: 10px; /* Opcional: bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar las imágenes */
+    width: 200px;  /* Ancho fijo para todas las imágenes */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene las proporciones sin deformar la imagen */
+    flex: 0 0 auto; /* Asegura que cada imagen mantenga su tamaño */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
 }
+
+
 
 h2 {
    background-color: #ff69b4;
    color: #fff;
 }
+
+
+
+
+.carousel {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+ .carousel-container {
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center; /* Centra las imágenes verticalmente */
+    overflow: hidden;
+    width: 80%; /* Puedes ajustar según tu diseño */
+    margin: 0 auto;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 15px; /* Espacio entre imágenes */
+    transition: transform 0.5s ease-in-out;
+    padding: 10px 0;
+}
+
+.carousel-container img {
+    width: 200px;  /* Ancho fijo */
+    height: 200px; /* Altura fija */
+    object-fit: cover; /* Mantiene proporciones */
+    flex: 0 0 auto;
+    margin: auto; /* Asegura centrado dentro de su espacio */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+
+  .carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .carousel-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .carousel-buttons button:hover {
+    background-color: #ff4580;
+  }
 
 /* Responsividad para pantallas pequeñas (hasta 480px) */
 @media (max-width: 480px) {
